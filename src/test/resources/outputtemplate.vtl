@@ -1,0 +1,20 @@
+------------------------------------------------------------------------------------------------------------------ 
+
+   									 $date               
+
+                                     Number : $checkNumber
+------------------------------------------------------------------------------------------------------------------ 
+    #foreach( $item in $testBill.orders )
+        $item.product.description @ $item.product.price each x $item.count : $item.total
+    #end
+      
+
+    Sub Total     :  $testBill.subTotal
+    Service Charge:  $testBill.serviceCharge
+    Total         :  $testBill.total
+
+ 
+    
+    
+    Thank you!
+------------------------------------------------------------------------------------------------------------------ 
